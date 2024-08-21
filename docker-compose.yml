@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  guestbook:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - guestbook_data:/data
+    environment:
+      - RESET_PASSWORD=passwort  # Setze dein Passwort hier
+
+volumes:
+  guestbook_data:
