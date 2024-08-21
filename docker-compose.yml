@@ -4,11 +4,11 @@ services:
   guestbook:
     build: .
     ports:
-      - "5000:5000"
+      - "8885:5000"
     volumes:
       - guestbook_data:/data
     environment:
-      - RESET_PASSWORD=passwort  # Setze dein Passwort hier
+      - RESET_PASSWORD=passwort  # ur password here pls
 
 volumes:
   guestbook_data:
